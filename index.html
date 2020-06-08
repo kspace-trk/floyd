@@ -16,7 +16,7 @@
     </header>
     <div class="container">
       <div class="container-title">
-        <p>0と1をとりあえず交互にした場合</p>
+        <p>代入する際に両者を比較し、より差が小さくなるほうに代入する。</p>
       </div>
       <div class="input-space">
         <input v-model="n" placeholder="0以上の数値を半角で入力してください" @keypress="enter">
@@ -36,6 +36,20 @@
         <div class="ans-contents">
           <p>AとBの差は</p>
           <p>{{dif}}</p>
+        </div>
+      </div>
+      <div class="whiteBox">
+        <div class="box">
+          <p>Aの集合</p>
+          <div v-for="itemA in arrayA">
+            <p>{{itemA}}</p>
+          </div>
+        </div>
+        <div class="box">
+          <p>Bの集合</p>
+          <div v-for="itemB in arrayB">
+            <p>{{itemB}}</p>
+          </div>
         </div>
       </div>
     </div>
