@@ -1,4 +1,4 @@
-let app = new Vue({
+const app = new Vue({
   el: "#app",
   data: {
     n: 0, //入力値
@@ -20,7 +20,11 @@ let app = new Vue({
       for (this.b = this.i + 1; this.b <= this.n; this.b += 2) {
         this.bSqrt += Math.sqrt(this.b);
       }
-      this.dif = this.aSqrt - this.bSqrt;
+      if (this.aSqrt - this.bSqrt < 0) {
+        this.dif = this.bSqrt - this.aSqrt;
+      } else {
+        this.dif = this.aSqrt - this.bSqrt;
+      }
     },
     enter: function () {
       if (window.event.keyCode == 13) {

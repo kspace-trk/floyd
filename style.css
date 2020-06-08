@@ -17,12 +17,18 @@ header p {
   margin: 30px auto 0;
   display: block;
 }
+.container-title {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto 40px;
+}
 .input-space {
   display: flex;
   justify-content: center;
 }
 .input-space img {
   width: 60px;
+  height: auto;
   margin-left: 10px;
 }
 .input-space input {
