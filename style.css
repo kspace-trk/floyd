@@ -25,10 +25,11 @@ header p {
 .input-space {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .input-space img {
   width: 60px;
-  height: auto;
+  height: 60px;
   margin-left: 10px;
 }
 .input-space input {
