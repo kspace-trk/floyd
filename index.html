@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>フロイド問題</title>
+</head>
+
+<body>
+  <div id="app">
+    <input v-model="n" placeholder="0以上の数値を半角で入力してください">
+    <button v-on:click="sqrt">計算する</button>
+    <p>aの集合の和は{{aSqrt}}です。</p>
+    <p>bの集合の和は{{bSqrt}}です。</p>
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+<script src="index.js"></script>
+
+</html>
