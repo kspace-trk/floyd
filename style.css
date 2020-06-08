@@ -1,0 +1,50 @@
+header {
+  width: 100%;
+  height: 75px;
+  background-color: #383840;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header p {
+  font-size: 20px;
+  color: #f7f7f7;
+  font-weight: 400;
+}
+
+.container {
+  width: 60%;
+  margin: 30px auto 0;
+  display: block;
+}
+.input-space {
+  display: flex;
+  justify-content: center;
+}
+.input-space img {
+  width: 60px;
+  margin-left: 10px;
+}
+.input-space input {
+  width: 250px;
+  height: 60px;
+}
+.input-space p {
+  font-size: 2rem;
+}
+.ans1 {
+  display: flex;
+  justify-content: center;
+}
+.ans-contents {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ans2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}

@@ -4,16 +4,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
   <title>フロイド問題</title>
 </head>
 
 <body>
   <div id="app">
-    <input v-model="n" placeholder="0以上の数値を半角で入力してください">
-    <button v-on:click="sqrt">計算する</button>
-    <p>aの集合の和は{{aSqrt}}です。</p>
-    <p>bの集合の和は{{bSqrt}}です。</p>
+    <header>
+      <p>Floyd-01</p>
+    </header>
+    <div class="container">
+      <div class="input-space">
+        <input v-model="n" placeholder="0以上の数値を半角で入力してください" @keypress="enter">
+        <img src="img/key.svg" alt="" v-on:click="sqrt" @keypress="enter">
+      </div>
+      <div class="ans1">
+        <div class="ans-contents">
+          <p>aの集合の和は</p>
+          <p>{{aSqrt}}</p>
+        </div>
+        <div class="ans-contents">
+          <p>bの集合の和は</p>
+          <p>{{bSqrt}}</p>
+        </div>
+      </div>
+      <div class="ans2">
+        <div class="ans-contents">
+          <p>AとBの差は</p>
+          <p>{{dif}}</p>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
