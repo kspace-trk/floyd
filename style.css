@@ -11,9 +11,8 @@ header p {
   color: #f7f7f7;
   font-weight: 400;
 }
-
 .container {
-  width: 60%;
+  width: 80%;
   margin: 30px auto 0;
   display: block;
 }
@@ -58,6 +57,11 @@ header p {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 600px) {
+  .ans-contents {
+    margin: 15px;
+  }
+}
 .ans2 {
   display: flex;
   justify-content: center;
@@ -69,4 +73,5 @@ header p {
 }
 .box {
   margin: 10px 30px 50px 30px;
+  text-align: center;
 }
